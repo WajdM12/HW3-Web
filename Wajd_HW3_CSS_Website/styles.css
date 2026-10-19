@@ -1,0 +1,237 @@
+/* CSC457 HW3 — external stylesheet */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff7fc;
+    color: #382b3a;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+header {
+    background-color: #f7c9e5;
+    border-bottom: 0.25rem solid #d96bad;
+    padding: 1.5rem 5vw;
+}
+
+header h1 {
+    margin: 0 0 1rem;
+    color: #57264b;
+    font-size: clamp(1.8rem, 4vw, 2.7rem);
+    font-weight: 700;
+    text-shadow: 1px 2px 2px rgba(102, 38, 82, 0.15);
+    text-transform: capitalize;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    background-color: #fce6f3;
+    padding: 0.7rem;
+    border: 1px solid #edb4d5;
+    border-radius: 0.8rem;
+}
+
+nav a {
+    display: inline-block;
+    color: #70265a;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.45rem 0.85rem;
+    border-radius: 0.5rem;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #d95ca6;
+    color: #ffffff;
+}
+
+main {
+    width: min(92%, 68rem);
+    margin: 2rem auto;
+    padding: clamp(1rem, 3vw, 2rem);
+    background-color: #ffffff;
+    border: 1px solid #f0cde2;
+    border-radius: 1rem;
+    box-shadow: 0 0.4rem 1.4rem rgba(111, 44, 88, 0.08);
+}
+
+h1, h2 {
+    color: #8c3472;
+    line-height: 1.25;
+    text-shadow: 1px 1px 1px rgba(92, 40, 78, 0.12);
+}
+
+h2 {
+    margin-top: 1.8rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid #f4c2df;
+    font-size: clamp(1.25rem, 2.5vw, 1.7rem);
+}
+
+p {
+    margin: 0.8rem 0 1rem;
+    font-size: 1rem;
+}
+
+ul, ol {
+    padding-left: 1.8rem;
+    margin: 0.7rem 0 1.3rem;
+    list-style-position: outside;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+dl {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #fff0f8;
+    border-left: 0.25rem solid #df79b8;
+    border-radius: 0.4rem;
+}
+
+dt {
+    color: #70265a;
+    font-weight: 700;
+}
+
+dd {
+    margin-bottom: 0.6rem;
+}
+
+a {
+    color: #a52c78;
+    font-weight: 600;
+}
+
+a:hover,
+a:focus {
+    color: #6d1f55;
+    text-decoration: underline;
+}
+
+#intro {
+    background-color: #fff0f8;
+    padding: 1.2rem;
+    border: 1px solid #f2c5df;
+    border-radius: 0.8rem;
+}
+
+.highlight {
+    color: #7c2e68;
+    background-color: #ffe4f3;
+    padding: 0.1rem 0.35rem;
+    border-radius: 0.25rem;
+    font-weight: 700;
+}
+
+article {
+    margin: 1.5rem 0;
+    padding: clamp(1rem, 2.5vw, 1.5rem);
+    border: 1px solid #edc3dd;
+    border-radius: 0.9rem;
+    background-color: #fffafd;
+}
+
+article h2 {
+    margin-top: 0;
+}
+
+figure {
+    margin: 1rem 0;
+    padding: 0.7rem;
+    background-color: #fff0f8;
+    border: 1px solid #f1c9e0;
+    border-radius: 0.7rem;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    max-width: 42rem;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 0.45rem;
+}
+
+figcaption {
+    padding-top: 0.6rem;
+    color: #70265a;
+    text-align: center;
+    font-style: italic;
+}
+
+.cv-section {
+    margin: 1.2rem 0;
+    padding: 0.2rem 0.4rem;
+}
+
+.cv-name {
+    margin-bottom: 0.2rem;
+    font-size: clamp(1.7rem, 4vw, 2.4rem);
+    text-transform: uppercase;
+}
+
+.cv-role {
+    margin-top: 0;
+    color: #a52c78;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.contact-list {
+    list-style-type: circle;
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 1.2rem 5vw;
+    background-color: #f7c9e5;
+    color: #57264b;
+    text-align: center;
+    border-top: 0.2rem solid #d96bad;
+}
+
+footer p {
+    margin: 0;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #edc3dd;
+    margin: 1.5rem 0;
+}
+
+@media (max-width: 38rem) {
+    header {
+        padding: 1.2rem 4vw;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+
+    nav a {
+        width: 100%;
+    }
+
+    main {
+        width: 94%;
+        margin: 1rem auto;
+        padding: 1rem;
+    }
+}
