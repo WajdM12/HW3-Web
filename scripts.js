@@ -11,15 +11,21 @@ function validateForm() {
     }
 }
 
-// Requirement 3: Show or hide a project description (projects.html)
-function toggleDescription(descriptionId) {
+// Requirement 3: Show or hide a project description and its image (projects.html)
+function toggleDescription(descriptionId, imageId) {
     var description = document.getElementById(descriptionId);
+    var image = document.getElementById(imageId);
     var currentDisplay = window.getComputedStyle(description).display;
+    var newDisplay = "block";
 
-    if (currentDisplay === "none") {
-        description.style.display = "block";
-    } else {
-        description.style.display = "none";
+    if (currentDisplay !== "none") {
+        newDisplay = "none";
+    }
+
+    description.style.display = newDisplay;
+
+    if (image) {
+        image.style.display = newDisplay;
     }
 }
 
